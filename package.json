@@ -1,0 +1,33 @@
+{
+  "name": "mario-time",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~3.1.2",
+    "@fitbit/sdk-cli": "^1.7.0",
+    "fitbit-sdk-types": "^4.1.6"
+  },
+  "fitbit": {
+    "appUUID": "6eed898d-d3dc-402b-9fd0-a56aa8a4c949",
+    "appType": "clockface",
+    "appDisplayName": "Mario Time",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [
+      "access_heart_rate"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  },
+  "dependencies": {}
+}
